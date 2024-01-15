@@ -27,10 +27,26 @@ p{
     cursor: pointer;
     margin: 5px;
     margin-left: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+section{
+    margin-top: 100px;
 }
 .sec-title{
     text-align: center;
     padding: 5px 100px;
+}
+.sec-title h2{
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
 .active{
     color: #FF5400;
@@ -42,7 +58,7 @@ p{
  header nav{
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 50px 0;
     align-items: center;
  }
  nav h2{
@@ -100,4 +116,38 @@ p{
     border-radius: 8px;
     background: #FFF;
     margin: 5px;
+}
+
+
+/* popular-tours  */
+.popular-tours{
+    display: flex;
+}
+.popular-content{
+    width: 50%;
+}
+.popular-img{
+    width: 50%;
+}
+.popular-img img{
+    width: 100%;
+}
+
+/* destination section  */
+.des-row{
+    display: flex;
+    gap:20px;
+    position: relative;
+}
+.des-row img{
+    flex:1; 
+    height: 300px;
+    width: 100%;
+    
+}
+.des-row p{
+    position: absolute;
+   top: 40%;
+   left: 40%;
+   color: white;
 }
