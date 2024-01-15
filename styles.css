@@ -1,0 +1,103 @@
+/* common css  */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+body{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+p{
+     color: rgba(19, 19, 24, 0.70);
+}
+.btn-primary{
+    border-radius: 8px;
+    background: #FF5400;
+    color: #fff;
+    padding: 10px 15px;
+    border: 0;
+    cursor: pointer;
+    margin: 5px;
+    margin-left: 0;
+}
+.sec-title{
+    text-align: center;
+    padding: 5px 100px;
+}
+.active{
+    color: #FF5400;
+    font-weight: 700;
+}
+
+/* header css  */
+
+ header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+ }
+ nav h2{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+ }
+ nav h2 span{
+    color: #FF5400;
+ }
+ nav ul{
+    display: flex;
+    list-style: none;
+ }
+ nav ul li{
+    margin-left: 44px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ }
+
+ .header-content{
+    height: 550px;
+    background:  linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),  url(Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    border-radius: 16px;
+   
+}
+ .header-content h2{
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-top: 10%;
+}
+.header-content p{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 50px 150px;
+}
+.header-content select{
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: #FFF;
+    margin: 5px;
+}
