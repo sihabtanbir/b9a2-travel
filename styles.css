@@ -126,6 +126,13 @@ section{
     border-radius: 8px;
     background: #FFF;
     margin: 5px;
+
+}
+.header-select-btn form{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 
@@ -134,10 +141,8 @@ section{
     display: flex;
 }
 .popular-content{
-    width: 50%;
 }
 .popular-img{
-    width: 50%;
 }
 .popular-img img{
     width: 100%;
@@ -168,6 +173,7 @@ section{
 .choose-row-one{
     display: flex;
     gap: 20px;
+    margin-bottom: 20px;
 }
 .choose-row-two{
     max-width: 50%;
@@ -188,6 +194,12 @@ section{
 }
 
 /* deals section  */
+
+.deals{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .deals-content{
     width: 500px;
@@ -272,4 +284,92 @@ section{
     justify-content: center;
     margin: 20px;
     
+ }
+
+
+
+
+
+
+
+
+ /* media quary    */
+ @media screen and (max-width:600px) {
+    h2{
+        font-size: 22px;
+    }
+    p{
+        font-size: 14px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-content h2{
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    .header-content select{
+        padding: 10px 15px;
+        border-radius: 8px;
+        background: #FFF;
+        margin: 5px;
+        width: 80%;
+    }
+    .header-select-btn form{
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.30);
+        max-width: 80%;
+        
+    }
+    .choose-row-one, .popular-tours, .perfect-place, .newsletter{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .des-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .choose-row-two{
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+     .deals img{
+        width: 100%;
+     }   
+ }
+
+
+
+
+
+
+ @media screen and (min-width:600px) and  (max-width:992px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        margin-left: 20px;
+        font-size: 18px;
+        width: 100%;
+    }
+    .popular-tours, .perfect-place, .newsletter{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+    .newsletter-content{
+        width: 100%;
+        
+    }
+    footer{
+        padding: 50px;
+    }
  }
