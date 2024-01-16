@@ -81,6 +81,13 @@ section{
     padding: 50px 0;
     align-items: center;
  }
+ .menubar{
+    display: none;
+ }
+ .menubar img{
+    height: 50px;
+    width: 50px;
+ }
 
 
  nav ul{
@@ -121,17 +128,24 @@ section{
     line-height: 26px;
     padding: 50px 150px;
 }
-.header-content select{
+.header-content select, .header-content input{
     padding: 10px 15px;
     border-radius: 8px;
     background: #FFF;
     margin: 5px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 
+}
+.header-content input{
+    /* padding: 10px 80px; */
 }
 .header-select-btn form{
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -139,8 +153,10 @@ section{
 /* popular-tours  */
 .popular-tours{
     display: flex;
+    
 }
 .popular-content{
+    width: 50%;
 }
 .popular-img{
 }
@@ -295,11 +311,55 @@ section{
 
  /* media quary    */
  @media screen and (max-width:600px) {
+    body{
+        padding: 5px;
+    }
+    .sec-title h2{
+        font-size: 22px;
+    }
+    .sec-title{
+        text-align: center;
+        padding: 35px;
+    }
+   
     h2{
         font-size: 22px;
     }
     p{
         font-size: 14px;
+    }
+    header{
+        
+       
+        
+       
+    }
+    header .travel-logo{
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    header nav{
+        width: ;
+       display: flex;
+        justify-content: space-around;
+        padding: 0;
+   
+    }
+    
+    .menubar{
+        display: block;
+    }
+    .menu li{
+        margin: 0;
+    }
+    .navbar{
+        display: none;
+    }
+    .menu:hover .navbar{
+        display: block;
+       
     }
     nav{
         display: flex;
@@ -320,6 +380,9 @@ section{
         margin: 5px;
         width: 80%;
     }
+    .header-content input{
+        padding: 10px 80px;
+    }
     .header-select-btn form{
         border-radius: 8px;
         background: rgba(255, 255, 255, 0.30);
@@ -329,6 +392,8 @@ section{
     .choose-row-one, .popular-tours, .perfect-place, .newsletter{
         display: flex;
         flex-direction: column;
+        padding: 0;
+        margin: 0;
     }
 
     .des-row{
@@ -343,6 +408,10 @@ section{
      .deals img{
         width: 100%;
      }   
+
+     footer{
+        padding: 50px;
+     }
  }
 
 
