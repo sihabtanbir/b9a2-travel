@@ -158,6 +158,7 @@ section{
 /* popular-tours  */
 .popular-tours{
     display: flex;
+    align-items: center;
     
 }
 .popular-content{
@@ -190,13 +191,17 @@ section{
    color: white;
 }
 
-/* booking section  */
-
-.booking{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+ /* guest services */
+  .resorts{
+    display: flex;
     gap: 20px;
-}
+    flex: wrap;
+  }
+  .resorts img{
+    height: 300px;
+    width: 100%;
+    border-radius: 16px;
+  }
 
 /* choose section  */
 .choose-row-one{
@@ -271,12 +276,15 @@ section{
 .perfect-place{
     display: flex;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* newsletter  */
 .newsletter{
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 .newsletter-content{
     width: 50%;
@@ -408,14 +416,16 @@ section{
         padding: 0;
         margin: 0;
     }
-    .booking{
-        display: grid;
-        grid-template-columns: auto auto ;
+    .resorts{
+        display: flex;
         gap: 20px;
-    }
+       flex-direction: column;
+      }
+      
     .des-row{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .choose-row-two{
         max-width: 100%;
@@ -437,6 +447,9 @@ section{
 
 
  @media screen and (min-width:600px) and  (max-width:992px) {
+    body{
+        padding: 5px;
+    }
     nav{
         display: flex;
         flex-direction: column;
@@ -455,6 +468,11 @@ section{
         width: 100%;
         
     }
+    .resorts{
+        display: flex;
+        gap: 20px;
+       flex-direction: column;
+      }
     footer{
         padding: 50px;
     }
