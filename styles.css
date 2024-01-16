@@ -37,7 +37,7 @@ section{
 }
 .sec-title{
     text-align: center;
-    padding: 5px 100px;
+    padding: 35px 150px;
 }
 .sec-title h2{
     color: #131318;
@@ -52,6 +52,26 @@ section{
     color: #FF5400;
     font-weight: 700;
 }
+.travel-logo{
+    display: flex;
+    align-items: center;
+}
+.travel-logo h2{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+ }
+ .travel-logo img{
+    height: 40px;
+    width: 40px;
+ }
+ .travel-logo h2 span{
+    color: #FF5400;
+ }
 
 /* header css  */
 
@@ -61,18 +81,8 @@ section{
     padding: 50px 0;
     align-items: center;
  }
- nav h2{
-    color: #131318;
-    font-family: Mulish;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
 
- }
- nav h2 span{
-    color: #FF5400;
- }
+
  nav ul{
     display: flex;
     list-style: none;
@@ -227,3 +237,39 @@ section{
     display: flex;
     gap: 20px;
 }
+.newsletter-content{
+    width: 50%;
+    padding: 20px;
+}
+.newsletter form input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+    margin: 5px 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+        
+}
+.subcribe-btn{
+    width: 90%;
+}
+.newsletter img{
+    width: 100%;
+}
+
+
+ /* footer section  */
+ footer{
+    text-align: center;
+    padding: 100px 200px;
+ }
+ .footer-logo{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+ }
