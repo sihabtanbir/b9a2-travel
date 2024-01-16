@@ -80,6 +80,7 @@ section{
     justify-content: space-between;
     padding: 50px 0;
     align-items: center;
+    
  }
  .menubar{
     display: none;
@@ -95,11 +96,15 @@ section{
     list-style: none;
  }
  nav ul li{
+    color:#424242;
     margin-left: 44px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+ }
+ nav ul li a{
+    color:#424242;
  }
 
  .header-content{
@@ -183,6 +188,14 @@ section{
    top: 40%;
    left: 40%;
    color: white;
+}
+
+/* booking section  */
+
+.booking{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
 }
 
 /* choose section  */
@@ -395,7 +408,11 @@ section{
         padding: 0;
         margin: 0;
     }
-
+    .booking{
+        display: grid;
+        grid-template-columns: auto auto ;
+        gap: 20px;
+    }
     .des-row{
         display: flex;
         flex-direction: column;
